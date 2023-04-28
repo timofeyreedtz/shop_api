@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.DATABASE:shop</OriginalElement>
+  <nodes>
+    <node x="393.55405405405406" y="392.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product</node>
+    <node x="75.80405405405406" y="0.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.keycloak_user</node>
+    <node x="383.8581081081081" y="653.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product_characteristic</node>
+    <node x="580.8581081081081" y="653.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.keyword</node>
+    <node x="740.0" y="447.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.sale</node>
+    <node x="392.05405405405406" y="173.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.organization</node>
+    <node x="744.8581081081081" y="631.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.sales_product</node>
+    <node x="24.25" y="631.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.review_score</node>
+    <node x="12.804054054054063" y="184.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.notification</node>
+    <node x="218.85810810810813" y="642.0">9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.buy_history</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.sales_product" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.sale" relationship="REFERENCES">
+      <point x="40.25" y="-71.5" />
+      <point x="865.6081081081081" y="610.0" />
+      <point x="819.5" y="610.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product_characteristic" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product" relationship="REFERENCES">
+      <point x="0.0" y="-49.5" />
+      <point x="472.3581081081081" y="610.0" />
+      <point x="480.05405405405406" y="610.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.buy_history" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product" relationship="REFERENCES">
+      <point x="36.25" y="-60.5" />
+      <point x="327.6081081081081" y="610.0" />
+      <point x="480.05405405405406" y="610.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.sales_product" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product" relationship="REFERENCES">
+      <point x="-40.25" y="-71.5" />
+      <point x="785.1081081081081" y="610.0" />
+      <point x="480.05405405405406" y="610.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.organization" relationship="REFERENCES">
+      <point x="0.0" y="-93.5" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.keyword" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product" relationship="REFERENCES">
+      <point x="0.0" y="-49.5" />
+      <point x="652.8581081081081" y="610.0" />
+      <point x="480.05405405405406" y="610.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.review_score" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.product" relationship="REFERENCES">
+      <point x="34.75" y="-71.5" />
+      <point x="128.5" y="610.0" />
+      <point x="480.05405405405406" y="610.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.notification" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.keycloak_user" relationship="REFERENCES">
+      <point x="0.0" y="-71.5" />
+      <point x="107.30405405405406" y="147.0" />
+      <point x="159.80405405405406" y="147.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.buy_history" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.keycloak_user" relationship="REFERENCES">
+      <point x="-36.25" y="-60.5" />
+      <point x="255.10810810810813" y="600.0" />
+      <point x="212.30405405405406" y="600.0" />
+      <point x="212.30405405405406" y="147.0" />
+      <point x="159.80405405405406" y="147.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.organization" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.keycloak_user" relationship="REFERENCES">
+      <point x="0.0" y="-82.5" />
+      <point x="480.05405405405406" y="147.0" />
+      <point x="159.80405405405406" y="147.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.review_score" target="9ad8dfa2-83cc-4d82-8b8c-52cf4da2ff0c.TABLE:shop.public.keycloak_user" relationship="REFERENCES">
+      <point x="-34.75" y="-71.5" />
+      <point x="59.0" y="610.0" />
+      <point x="2.3040540540540633" y="610.0" />
+      <point x="2.3040540540540633" y="147.0" />
+      <point x="159.80405405405406" y="147.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8425692695214105" showDependencies="false" x="453.0" y="387.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
